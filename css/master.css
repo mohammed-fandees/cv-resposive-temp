@@ -1,0 +1,383 @@
+/* Start Global Ruls */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #009688;
+    --main-text-color: #666666;
+    --main-box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Larg */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+h3, span {
+    color: var(--main-text-color);
+}
+
+i {
+    color: var(--main-color);
+}
+
+/* End Global Ruls */
+
+.container {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+.right  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.right .card {
+    padding: 20px;
+}
+
+.right .card:first-of-type {
+    flex: 1;
+}
+
+.card {
+    box-shadow: var(--main-box-shadow);
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--main-text-color);
+}
+
+@media (max-width: 767px) {
+    .title {
+        justify-content: center;
+    }
+}
+
+.title h1 {
+    font-weight: normal;
+}
+
+.title i {
+    font-size: 35px;
+}
+
+/* The Left Card */
+
+.content {
+    padding: 15px;
+}
+
+.image {
+    position: relative;
+}
+
+.image h2 {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    font-weight: normal;
+    background: var(--main-color);
+    color: #fff;
+    width: 100%;
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .image h2 {
+        justify-content: center;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.left ul:first-child {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+ul li p {
+    margin: 0;
+    color: var(--main-text-color);
+    font-size: 15px;
+}
+
+.details li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left h3 {
+    font-size: 17px;
+}
+
+.left .out {
+    width: 100%;
+    height: 20px;
+    background: #EEE;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.left ul:last-of-type li .out {
+    height: 30px;
+}
+
+.left .range {
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;   
+    position: relative;
+}
+
+.details ul:first-of-type li:nth-child(1) .range {
+    width: 90%;
+}
+
+.details ul:first-of-type li:nth-child(1) .range::before {
+    content: '90%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #fff;
+}
+
+.details ul:first-of-type li:nth-child(2) .range {
+    width: 80%;
+}
+
+.details ul:first-of-type li:nth-child(2) .range::before {
+    content: '80%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #fff;
+}
+
+.details ul:first-of-type li:nth-child(3) .range {
+    width: 75%;
+}
+
+.details ul:first-of-type li:nth-child(3) .range::before {
+    content: '75%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #fff;
+}
+
+.details ul:first-of-type li:nth-child(4) .range {
+    width: 50%;
+}
+
+.details ul:first-of-type li:nth-child(4) .range::before {
+    content: '50%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #fff;
+}
+
+.details ul:last-of-type li:nth-child(1) .range {
+    width: 100%;
+}
+
+.details ul:last-of-type li:nth-child(2) .range {
+    width: 50%;
+}
+
+.details ul:last-of-type li:nth-child(3) .range {
+    width: 30%;
+}
+
+/* End The Left Card */
+/* The Right Cards */
+
+.right h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .date {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right h3 {
+        text-align: center;
+    }
+}
+
+.date i {
+    margin-right: 15px;
+}
+
+.date span {
+    color: var(--main-color);
+}
+
+.current {
+    color: #fff !important;
+    padding: 4px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: var(--main-color);
+}
+
+
+.row:not(:last-of-type) {
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.right .row p {
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .right .row p {
+        text-align: center;
+    }
+}
+
+/* Start Footer */
+
+.footer {
+    background: var(--main-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer ul {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.footer ul i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
