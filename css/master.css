@@ -369,8 +369,11 @@ ul li p {
     gap: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 30px;
+}
+
+.footer ul li {
+    margin: auto;
 }
 
 .footer ul i {
